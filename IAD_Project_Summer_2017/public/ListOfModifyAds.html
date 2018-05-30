@@ -1,0 +1,14 @@
+﻿<link href="javascripts/stylesheets/ListOfModifyAds.css" rel="stylesheet" />
+<div ng-controller="ListofItemsForModify" >
+<form class="ListofAds" ng-repeat="ad in listofads" ng-submit="submit(ad.id)">
+    <div class="middle">
+        <img src={{ad.image[0]}} ng-click="display(ad.id)" />
+        <div class="Effects">
+            <div class="text"><b>Click here to modify</b></div>
+        </div>
+    </div>    
+    <h4>{{ad.name}}</h4>
+    <p>Posted on {{ad.created}}</p> 
+    <input type="submit" class="button" value="DeactivateAd" />
+</form>
+</div>

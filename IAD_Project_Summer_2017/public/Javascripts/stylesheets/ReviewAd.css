@@ -1,0 +1,35 @@
+﻿.ReviewAd
+{
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0; 
+    width: 100%; 
+    height: 100%; 
+    overflow:scroll;
+    background-color: rgba(0,0,0,0.4); 
+    padding-top: 90px;
+}
+.blocks {
+    box-shadow: 10px 10px 5px grey;
+    border: 1px solid #ffe000;
+    border-style: inset;
+   max-width: 500px;
+   margin:auto;
+   background:white;
+   padding: 10px;    
+}
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}

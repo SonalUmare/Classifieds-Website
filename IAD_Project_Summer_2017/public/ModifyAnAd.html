@@ -1,0 +1,36 @@
+﻿<link href="javascripts/stylesheets/ModifyAd.css" rel="stylesheet" />
+<div class="Modify" ng-controller="ModifyAdController">
+    <div class="ModifyAnAd" >
+        <button id="ModifyAd" class="tablets"><span style="font-family:'Century Gothic';">Modify an Ad</span></button>
+    </div>
+    <div id="M1" class="Modifycontent">
+        <form id="M2" ng-submit="UpdateAd()">
+            <label id="ItemMid">{{ModifyAdmessage}}</label><br />
+            <label for="Item_name">Item name</label><br />
+            <input type="text" id="Item_name" placeholder="Item name" ng-model="MItemName" /><br /><br />
+            <label for="Description">Description</label><br />
+            <textarea id="Description" name="description" placeholder="Enter description of an item" ng-model="MDescription"></textarea><br /><br />
+            <label for="Price">Price Of Item</label><br />
+            <input type="text" id="Price" placeholder="Enter price" ng-model="Mprice" /><br /><br />
+            <label for="image1">Image#1</label><br />
+            <input type="text" id="image1" placeholder="Item's image #1" ng-model="image[0]" /><br /><br />
+            <label for="iamge2">Image#2</label><br />
+            <input type="text" id="image2" placeholder="Item's image #2" ng-model="image[1]" /><br /><br />
+            <label for="iamge3">Image#3</label><br />
+            <input type="text" id="image3" placeholder="Item's image #3" ng-model="image[2]" /><br /><br />
+            <label for="firstname">Enter your first Name</label><br />
+            <input type="text" id="firstname" placeholder="First Name" ng-model="Mfirstname" /><br /><br />
+            <label for="lastname">Enter your last name</label><br />
+            <input type="text" id="lastname" placeholder="Last Name" ng-model="Mlastname" /><br /><br />
+            <label for="ContactNo">Contact No</label><br />
+            <input type="text" id="ContactNo" placeholder="Contact No" ng-model="MontactNo" /><br /><br />
+            <label for="Email_id">Email id</label><br />
+            <input type="text" id="Email_id" placeholder="Email_id" ng-model="MEmail_Id" /><br /><br />
+            <label for="City">City</label><br />
+            <input type="text" id="City" placeholder="City" ng-model="City" /><br /><br />
+            <input class="button" type="submit" value="Update Ad" />
+        </form>
+    </div>
+</div>
+<script src="javascripts/CreateAd/MoifyAd.js"></script>
+<script src="javascripts/CreateAd/DefModifyAdd.js"></script>

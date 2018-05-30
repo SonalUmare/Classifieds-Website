@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>IAD_Project_Summer_2017</Name>
+    <RootNamespace>IAD_Project_Summer_2017</RootNamespace>
+    <LastActiveSolutionConfig>Debug|Any CPU</LastActiveSolutionConfig>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>c3cb5542-5a8a-4aa4-8cfd-a01e22ddabf5</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>bin\www</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <ProjectView>ShowAllFiles</ProjectView>
+    <NodejsPort>1337</NodejsPort>
+    <StartWebBrowser>true</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="app.js" />
+    <Compile Include="node_modules\DbFetchAdd.js" />
+    <Compile Include="public\Javascripts\angular-resource.js" />
+    <Compile Include="public\Javascripts\angular-route.js" />
+    <Compile Include="public\Javascripts\angular-ui-router %281%29.js" />
+    <Compile Include="public\Javascripts\angular.js" />
+    <Compile Include="public\Javascripts\core.js" />
+    <Compile Include="public\javascripts\CreateAd\DefModifyAdd.js" />
+    <Compile Include="public\javascripts\CreateAd\MoifyAd.js" />
+    <Compile Include="public\javascripts\LoginRegister\defaultTabforloginreg.js" />
+    <Compile Include="public\javascripts\CreateAd\DefCreateanAd.js" />
+    <Compile Include="public\Javascripts\jquery.js" />
+    <Compile Include="public\javascripts\LoginRegister\Login_Reg.js" />
+    <Compile Include="public\javascripts\CreateAd\PostanAd.js" />
+    <Compile Include="node_modules\LoginAs.js" />
+    <Compile Include="public\javascripts\Navigation.js" />
+    <Compile Include="public\javascripts\Sendmessage.js" />
+    <Compile Include="routes\index.js" />
+    <Compile Include="routes\ListAd.js" />
+    <Compile Include="routes\message.js" />
+    <Compile Include="routes\users.js" />
+    <Compile Include="bin\www" />
+    <Content Include="Data\DeactivatedAds.json" />
+    <Content Include="Data\InboxMessage.json" />
+    <Content Include="Data\ListOfAds.json" />
+    <Content Include="Data\members.json" />
+    <Content Include="package.json" />
+    <Content Include="public\Buy.html" />
+    <Content Include="public\DeactivateAnAd.html" />
+    <Content Include="public\DisplayAd.html" />
+    <Content Include="public\images\img1.jpg" />
+    <Content Include="public\images\img2.png" />
+    <Content Include="public\images\img3.jpg" />
+    <Content Include="public\images\Untitled collage.jpg" />
+    <Content Include="public\Inboxmessage.html" />
+    <Content Include="public\javascripts\stylesheets\BuyItems.css" />
+    <Content Include="public\javascripts\stylesheets\DisplayAd.css" />
+    <Content Include="public\javascripts\stylesheets\inboxmessage.css" />
+    <Content Include="public\javascripts\stylesheets\ListOfModifyAds.css" />
+    <Content Include="public\javascripts\stylesheets\ModifyAd.css" />
+    <Content Include="public\javascripts\stylesheets\ReviewAd.css" />
+    <Content Include="public\javascripts\stylesheets\Sendmessage.css" />
+    <Content Include="public\javascripts\stylesheets\slideshow.css" />
+    <Content Include="public\ListOfModifyAds.html" />
+    <Content Include="public\index.html" />
+    <Content Include="public\ModifyAnAd.html" />
+    <Content Include="public\javascripts\stylesheets\overlayeffect.css" />
+    <Content Include="public\PostAnAd.html" />
+    <Content Include="public\javascripts\stylesheets\Login_Reg.css" />
+    <Content Include="public\javascripts\stylesheets\PostanAd.css" />
+    <Content Include="public\javascripts\stylesheets\style.styl" />
+    <Content Include="public\javascripts\stylesheets\TopNavigation.css" />
+    <Content Include="public\ReviewAd.html" />
+    <Content Include="public\SlideShow.html" />
+    <Content Include="public\Username.html" />
+    <Content Include="README.md" />
+    <Content Include="typings.json" />
+    <Content Include="views\index.jade" />
+    <Content Include="views\layout.jade" />
+    <Content Include="views\error.jade" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\" />
+    <Folder Include="Data\" />
+    <Folder Include="node_modules\" />
+    <Folder Include="public\" />
+    <Folder Include="public\images\" />
+    <Folder Include="public\javascripts\" />
+    <Folder Include="public\javascripts\LoginRegister\" />
+    <Folder Include="public\javascripts\CreateAd\" />
+    <Folder Include="public\javascripts\stylesheets\" />
+    <Folder Include="routes\" />
+    <Folder Include="typings\" />
+    <Folder Include="typings\globals\" />
+    <Folder Include="typings\globals\body-parser\" />
+    <Folder Include="typings\globals\cookie-parser\" />
+    <Folder Include="typings\globals\debug\" />
+    <Folder Include="typings\globals\express-serve-static-core\" />
+    <Folder Include="typings\globals\express-session\" />
+    <Folder Include="typings\globals\express\" />
+    <Folder Include="typings\globals\jade\" />
+    <Folder Include="typings\globals\mime\" />
+    <Folder Include="typings\globals\morgan\" />
+    <Folder Include="typings\globals\node\" />
+    <Folder Include="typings\globals\serve-favicon\" />
+    <Folder Include="typings\globals\serve-static\" />
+    <Folder Include="typings\globals\stylus\" />
+    <Folder Include="views\" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="typings\globals\body-parser\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\cookie-parser\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\debug\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\express-serve-static-core\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\express-session\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\express\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\jade\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\mime\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\morgan\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\node\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\serve-favicon\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\serve-static\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\stylus\index.d.ts" />
+    <TypeScriptCompile Include="typings\index.d.ts" />
+  </ItemGroup>
+  <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,77 @@
+﻿.Modify
+{
+  box-shadow:10px 10px 5px grey;
+  border: 1px solid #ffe000;
+  border-style:inset;  
+  background-color:beige;
+  max-width:600px;
+  margin:auto;
+}
+body {
+    font-family: 'Century Gothic';
+   
+}
+div.ModifyAnAd
+{
+    font-family:'Century Gothic';
+    overflow:hidden;
+    border:1px solid #ccc;
+    background-color:black;
+    color:white;
+}
+
+div.ModifyAnAd button
+{
+    
+    background-color: inherit;    
+    border: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    color:white;
+    font-size:25px;
+    
+}
+div.ModifyAnAd.button.active
+{
+    background-color:#ccc;
+}
+div.ModifyAnAd button:hover
+{
+    background-color:black;
+    color:grey;
+}
+.Modifycontent
+{
+    border: 1px solid #ccc;
+    border-top: none;
+    padding:12px 20px 0px 20px
+}
+input,#Description
+{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    
+}
+.button
+{   
+     width: 100%;
+     margin:8px 0;
+     padding: 14px 20px;
+    background: white;
+    cursor:pointer;
+    font-size:25px;
+}
+.button:hover
+{
+    background-color:black;
+    color:grey;
+}
+#ItemMid
+{
+    color:red;
+    align-self:center;
+}

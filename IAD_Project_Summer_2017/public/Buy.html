@@ -1,0 +1,13 @@
+﻿<link href="javascripts/stylesheets/BuyItems.css" rel="stylesheet" />
+<form ng-controller="BuyController" class="buy">
+    <div class="Main" ng-repeat="item in items" ng-click="display(item.id)">
+       <img src={{item.image[0]}} ng-hide="!item.image[0]" />
+        <div class="left">
+            <h4><b>{{item.name}}  </b></h4>
+            <p>$Price : {{item.price}}</p>
+            <p>Posted on : {{item.created}}</p>
+        </div>
+    </div>
+</form>
+
+

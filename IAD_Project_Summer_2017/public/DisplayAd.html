@@ -1,0 +1,35 @@
+﻿<link href="javascripts/stylesheets/DisplayAd.css" rel="stylesheet" />
+<link href="javascripts/stylesheets/Sendmessage.css" rel="stylesheet" />
+<div ng-controller="displayAdController" >
+    <div class="ad">
+        <div class="image" ng-repeat="img in images">
+            <img src="{{img}}" />
+        </div>
+        <div class="ItemDesc">
+            <h3>Item Name : {{itemname}}</h3>
+            <h4>Price : {{price}}</h4><br />
+            <p>Description : {{description}}</p><br />
+            <p>Owner : {{ownername}}</p><br />
+            <p>Contact Details</p><br />
+            <p>Email to : {{emailId}} </p>
+            <button id="myBtn" ng-click="openMsg()">Compose message</button>
+        </div>
+    </div>
+
+    <form id="myModal" class="modal" ng-submit="msgsend()">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <label>{{messagesent}}</label>
+                <h2>Write a message for the seller</h2>
+            </div>
+            <div class="modal-body">
+                <label for="fromid">From  </label><input type="email" id="fromid" ng-model="from" /><br /><br />
+                <label for="txt1">Message  </label><textarea id="txt1" placeholder="Write message" ng-model="writemsg"></textarea><br /><br />
+            </div>
+            <div class="modal-footer">
+                <input type="submit" value="Send message" class="msgbtn" />
+            </div>
+        </div>
+    </form>
+</div>

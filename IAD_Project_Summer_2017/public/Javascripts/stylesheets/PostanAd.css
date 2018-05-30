@@ -1,0 +1,78 @@
+﻿.block
+{
+  
+  box-shadow:10px 10px 5px grey;
+  border: 1px solid #ffe000;
+  border-style:inset;  
+  background-color:white;
+  max-width:600px;
+  margin:auto;
+}
+body {
+    font-family: 'Century Gothic';
+   
+}
+div.PostAnAdTabs
+{
+    font-family:'Century Gothic';
+    overflow:hidden;
+    border:1px solid #ccc;
+    background-color:#b56969;
+    color:white;
+}
+
+div.PostAnAdTabs button
+{
+    
+    background-color: inherit;    
+    border: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    color:white;
+    font-size:25px;
+    
+}
+div.PostAnAdTabs.button.active
+{
+    background-color:#ccc;
+}
+div.PostAnAdTabs button:hover
+{
+    background-color:black;
+    color:grey;
+}
+.postadd-content
+{
+    border: 1px solid #ccc;
+    border-top: none;
+    padding:12px 20px 0px 20px
+}
+input,#Description
+{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    
+}
+.button
+{   
+     width: 100%;
+     margin:8px 0;
+     padding: 14px 20px;
+    background: white;
+    cursor:pointer;
+    font-size:25px;
+}
+.button:hover
+{
+    background-color:black;
+    color:grey;
+}
+#ItemAdid
+{
+    color:red;
+    align-self:center;
+}

@@ -1,0 +1,16 @@
+﻿.image img {
+   
+    width:1400px;
+    height:1200px;
+    position:sticky;
+}
+
+.text
+{
+    text-align: center;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}

@@ -1,0 +1,13 @@
+﻿<link href="javascripts/stylesheets/inboxmessage.css" rel="stylesheet" />
+<form ng-controller="InboxMessageController" class="box">
+    <div class="tab">
+        <div ng-repeat="msg in messages">
+            <button ng-click="openMsg(event, msg.id)" class="tablinks" value="{{msg.num}}">{{msg.num}}</button>
+        </div>
+    </div>
+    
+    <div id="{{msgid}}" class="tabcontent">
+        <p>From {{sendername}}</p>
+        <p>Message {{messagedesc}}</p>
+    </div>
+</form>

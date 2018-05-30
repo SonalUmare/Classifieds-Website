@@ -1,0 +1,99 @@
+﻿body
+{
+   background:#e8edf3;
+    font-family: 'Century Gothic';
+    font-size: 25px; 
+       
+}
+
+.TopNavigation 
+{
+    position:fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    width: 100%;
+    min-width: 1024px;
+    height: 48px;
+    max-height: 44px;
+    font-size: 25px;
+    user-select: none;
+    margin: 0px;
+    background:white;    
+    padding:22px;
+    overflow:hidden;
+    z-index:999;
+    border-bottom-left-radius:18px;
+    border-bottom-right-radius:18px;
+
+}
+.TopNavigation a
+{
+    padding:30px 40px 30px 40px;
+    color:#22264b;
+    text-align:center;
+}
+a:link
+{
+    text-decoration:none;
+}
+a:hover , a:active
+{
+    cursor:pointer;
+    color:#22264b;
+    
+
+}
+
+.loginregbtn
+{
+    padding:5px 27px 5px 27px;
+    color:#5D001E;
+    border:none;
+    text-align:center;
+    font-size:25px;
+    font-family: 'Century Gothic';
+    background:transparent;
+    
+}
+.loginregbtn:hover
+{
+    cursor:pointer;
+    color:white;
+    background-color:#5D001E;
+}
+.main{
+    margin:40px 5px 5px 5px;
+    display:inline;
+
+}
+.LoggedInUser
+{
+    color:black;
+    text-align:right;
+    padding-top:10px;
+    font-size:23px;
+    list-style:none;
+    margin:auto;
+    float:right;
+}
+#logoutBtn
+{  
+     margin-left:17px;
+     padding: 2px 5px 2px ;
+     cursor:pointer;
+     font-size:18px;
+     color:black;
+     background-color:white;
+     text-align:center;
+     float:right;
+      border-radius:8px;
+      
+}
+#logoutBtn:hover
+{
+   
+    background-color:rgba(231, 154, 136, 0.97);
+    color:white;
+    opacity:0.8;
+}

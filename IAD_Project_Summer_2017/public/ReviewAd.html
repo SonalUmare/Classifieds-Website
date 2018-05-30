@@ -1,0 +1,17 @@
+﻿<div ng-controller="ReviewAdController">
+    <div class="ReviewAd">
+        <div class="image" ng-repeat="img in images">
+            <img src="{{img}}" />
+        </div>
+        <div class="ReviewDesc">
+            <h3>Item Name : {{itemname}}</h3>
+            <h4>Price : {{price}}</h4><br />
+            <p>Description : {{description}}</p><br />
+            <p>Owner : {{ownername}}</p><br />
+            <p>Contact Details</p><br />
+            <p>Email to : {{emailId}} </p>
+            <!--<button id="myBtn" ng-click="Review()">Post Ad</button>-->
+            <button id="mybtn1" ng-click="Edit()">Edit</button>
+        </div>
+    </div>
+</div>

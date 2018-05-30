@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+
+<html ng-app="TradeIn" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Trade In</title>
+    <script src="Javascripts/jquery.js"></script>
+    <script src="Javascripts/angular.js"></script>
+    <script src="Javascripts/angular-ui-router (1).js"></script>
+    <script src="javascripts/LoginRegister/Login_Reg.js"></script>
+    <script src="javascripts/Navigation.js"></script>
+    <link href="javascripts/stylesheets/TopNavigation.css" rel="stylesheet" />
+    <link href="javascripts/stylesheets/Login_Reg.css" rel="stylesheet" />
+    <link href="javascripts/stylesheets/overlayeffect.css" rel="stylesheet" /> 
+</head> 
+<body>
+    <div id="overlay" onclick="off()">
+        <div id="text"></div>
+    </div>
+    <header>
+        <nav id="TopNavigation" class="TopNavigation" ng-controller="TopNav">
+            <b>
+            <a ui-sref="SlideShow" ui-sref-active="active">TradeIn Ad</a>
+            <a ui-sref="Buylink" ui-sref-active="active" ng-click="checkLogin('buy')">Buy</a>
+            <a ui-sref="PostAnAdlink" ui-sref-active="active" ng-click="checkLogin('post')">Post Ad</a>
+            <a ui-sref="Listofadslink" ui-sref-active="active" ng-click="checkLogin('modify')">Modify Ad</a>
+            <a ui-sref="DeactivateAnAdlink" ui-sref-active="active" ng-click="checkLogin('deactivate')">Deactivate Ad</a>
+            <a ui-sref="Messagelink" ui-sref-active="active" ng-click="checkLogin('inboxmessage')">Inbox messages</a>
+            <button type="submit" class="loginregbtn" ng-click="checkLogin('loggedIn')">
+              <b><span style="font-family:'Century Gothic'">Login/Register</span></b>  
+            </button>
+                </b>
+        </nav>
+    </header>
+
+      
+    <main class="main">
+
+        <form id="logout" class="LoggedInUser" ng-controller="LogoutController" ng-submit="logout()">
+            <input type="submit" class="user" id="logoutBtn" value="Logout" />
+        </form>
+
+        <form id="Userlogin" class="LoggedInUser" ng-controller="DisplayUsernameController">
+            <p ng-model="LoggedInUsername" class="user"></p>
+        </form>        
+        <br />
+
+        <div ui-view="body"></div>
+    </main>
+
+        <div id="id01" class="modal">
+            <div class="blocks animate">
+                <div class="tab">
+                    <button class="tablinks" id="default" onclick="openPage(event, 'Login')"><span style="font-family:'Century Gothic'">Login</span></button>
+                    <button class="tablinks" onclick="openPage(event, 'Register')"><span style="font-family:'Century Gothic'">Register</span></button>
+                </div>
+
+                <div id='Login' class="tabcontent">
+                    <form ng-controller="LoginController" id="loginId" ng-submit="login()">
+                        <label id="lmessage">{{loginmessage}}</label><br />
+                        <label>Username</label><br />
+                        <input type="text" placeholder="Enter your username" ng-model="Lusername" /><br /> <br />
+                        <label>Password</label><br />
+                        <input type="password" placeholder="Enter your password" ng-model="loginPassword" /><br /> <br />
+                        <input class="buttons" type="submit" value="Login" />
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'" id="cl1">Cancel</button>
+                    </form>
+                </div>
+                <div id='Register' class="tabcontent">
+                    <form ng-controller="RegistrationController" id="RegId" ng-submit="register()">
+                        <label id="message">{{Message}}</label><br />
+                        <label for="fname">First Name</label><br />
+                        <input type="text" placeholder="Enter your First name" id="fname" ng-model="RegFname" /><br /> <br />
+                        <label for="lname">Last Name</label><br />
+                        <input type="text" placeholder="Enter your Last name" id="lname" ng-model="RegLname" /><br /> <br />
+                        <label for="Username">Username</label><br />
+                        <input type="text" placeholder="Enter a Username" id="Uname" ng-model="UserName" /><br /><br />
+                        <label for="email">Email-Id</label><br />
+                        <input type="text" placeholder="Enter your email address" id="email" ng-model="RegEmail" /><br /> <br />
+                        <label for="pass">Password</label><br />
+                        <input type="password" placeholder="Enter a password" id="pass" ng-model="RegPassword" /><br /> <br />
+                        <label for="pass2">Password(Re-type)</label><br />
+                        <input type="password" placeholder="Re-enter your password" id="pass2" ng-model="RegrePassword" /><br /> <br />
+                        <input class="buttons" type="submit" value="Register" />
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'" id="cl">Cancel</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    <script src="javascripts/LoginRegister/defaultTabforloginreg.js"></script>
+</body>
+</html>

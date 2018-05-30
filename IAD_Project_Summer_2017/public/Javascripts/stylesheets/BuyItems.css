@@ -1,0 +1,40 @@
+﻿.buy{}
+.Main
+ {
+
+    font-family:'Century Gothic';
+    font-size:25px;
+   
+    transition: 0.3s;
+    border-radius: 5px;
+    cursor:pointer;
+    margin:30px 10px 10px 10px ;
+    display:inline-block;
+    width: 290px;
+    height:390px;   
+    float: left;
+    padding: 10px;
+    background-color:transparent;
+
+}
+.Main:hover
+{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    border:2px solid #22264b;
+}
+img
+ {
+    display:block;
+    width:285px;
+    height:200px;
+    border-radius:8px;
+    
+}
+h4{
+    text-align:center;
+    font-family:'Bookman Old Style';
+}
+p{
+    text-align:center;
+    font-size:20px;    
+}
